@@ -4,12 +4,9 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 '''
  This starts a flask webserver on localhost:port5000 (default).
-
- We need to create an HTTP tunnel to this, so Twilio can reach the server.
-
- Using ngrok for this, it gives us a publicly addressible URL that we can paste into the "A Message Comes In" webhook in our Twilio web console.
-
- Don't forget to add /sms to the end of the route!
+ We need to create an HTTP tunnel to this so Twilio can reach the server.
+ Using --ngrok-- for this, it gives us a publicly addressible URL that we can paste into Twilio webhook.
+Add the route (/sms) to the end of URL.
 '''
 
 # init Flask app
